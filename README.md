@@ -1,5 +1,6 @@
 # Prompt para a IA
-Você receberá um arquivo JSON que contém uma lista de produtos e as variações de busca que os usuários podem usar ao procurá-los. Sua tarefa é analisar as variações de busca e sugerir o produto correto para cada busca incorreta.
+Você receberá um arquivo JSON dentro do repositório que contém uma lista de produtos e as variações de busca que os usuários podem usar ao procurá-los. 
+Sua tarefa é analisar as variações de busca e sugerir o produto correto para cada busca incorreta.
 
 ### Instruções:
 - Analisar o JSON: Examine o JSON fornecido e identifique todas as variações de busca para cada produto.
@@ -11,21 +12,9 @@ Você receberá um arquivo JSON que contém uma lista de produtos e as variaçõ
 ```ruby
 A busca escrita incorretamente.
 O produto correto sugerido.
-Estrutura do JSON:
 ```
 
 ### O JSON será fornecido no seguinte formato:
-```ruby
-{
-    "Busca": {
-      "Produto1": ["variação1", "variação2"],
-      "Produto2": ["variação1", "variação2", "variação3"],
-      ...
-    }
-}
-```
-
-Exemplo de Entrada:
 ```ruby
 {
     "Busca": {
@@ -34,14 +23,6 @@ Exemplo de Entrada:
       ...
     }
 }
-```
-
-- Exemplo de Saída Esperada:
-```ruby
-- Busca incorreta: "Cerve"
-- Produto sugerido: "Cerveja"
-- Busca incorreta: "litrao"
-- Produto sugerido: "Cerveja"
 ```
 
 ### Observação:
